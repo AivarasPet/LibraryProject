@@ -10,7 +10,7 @@ public class EmailValidatorTest {
     public void testEmailWithNoAtSymbol() {
         EmailValidator emailValidator = new EmailValidator();
         String testEmail = "aivarasgmail.com";
-        assertTrue(!emailValidator.isEmailValid(testEmail));
+        assertFalse(emailValidator.isEmailValid(testEmail));
     }
 
     @Test
@@ -38,6 +38,6 @@ public class EmailValidatorTest {
     public void testEmailWithInvalidSymbol() {
         EmailValidator emailValidator = new EmailValidator();
         String testEmail = "aivaras@<><>.com";
-        assertTrue(!emailValidator.isEmailValid(testEmail));
+        assertFalse(emailValidator.isEmailValid(testEmail));
     }
 }
