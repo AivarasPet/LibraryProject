@@ -8,7 +8,7 @@ Expected values of some of the tests did not match their names. For instance:
 assertTrue(passwordChecker.HasUppercaseLetters("egegezvg")); 
 The test should return false, as argument does not contain UpperCase letters. There were other instances of something like this.
 
-There were also an instance where a service was supposed return a confirmation Strings on correct phone number. However, it is physically impossible to for these 2 tests to coexist 
+There were also an instance where a service was supposed return a confirmation Strings on a correct phone number. However, it is physically impossible for these 2 tests to coexist 
 as they confirm the same thing:
     @Test
     void TestOtherCountryNumberPrefixCorrect(){
